@@ -20,6 +20,7 @@ import numpy as np
 # FUEL CONSUMPTION COMB (L/100 km) e.g. 9.2
 # CO2 EMISSIONS (g/km) e.g. 182 --> low --> 0
 
-df = pd.read_csv("FuelConsumption.csv")
+df = pd.read_csv('FuelConsumptionCo2.csv')
 # take a look at the dataset
 print(df.head())
+

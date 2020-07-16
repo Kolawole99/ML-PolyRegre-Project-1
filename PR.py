@@ -24,3 +24,19 @@ df = pd.read_csv('FuelConsumptionCo2.csv')
 # take a look at the dataset
 print(df.head())
 
+#===========================Selecting the features for the project===============================
+cdf = df[['ENGINESIZE','CYLINDERS','FUELCONSUMPTION_COMB','CO2EMISSIONS']]
+cdf.head(9)
+#plotting the emission and engine size
+plt.scatter(cdf.ENGINESIZE, cdf.CO2EMISSIONS,  color='blue')
+plt.xlabel("Engine size")
+plt.ylabel("Emission")
+plt.show()
+
+
+
+#=====================================TRAIN/TEST SPLIT======================================
+
+
+
+
